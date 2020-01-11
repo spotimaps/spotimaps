@@ -1,3 +1,7 @@
+import * as firebase from 'firebase/app';
+import 'firebase/auth';
+import 'firebase/firestore';
+
 const firebaseSampleData = [
     {
         info: {
@@ -17,9 +21,18 @@ const firebaseSampleData = [
     },
 ]
 
+
 const getData = ( callback ) => {
-    // where to implement firebase call
-    callback(firebaseSampleData);
+    let db = firebase.firestore();
+    // where to implement firebase call 
+    let query = db.collection('songs');
+    let newData = [];
+    query.onSnapshot(snapshot => {
+        snapshot.docChanges().forEach(change => {
+            newData = [...newData, {...change.doc.data(), id: change.doc.id}];
+            callback(newData)
+        })
+    })
 }
 const addData = () => {
     return firebaseSampleData;
