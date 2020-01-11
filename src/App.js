@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Map from './components/Map';
+import StartModal from './components/StartModal';
 import Calls from './Calls';
 import './App.css';
 
@@ -13,6 +14,7 @@ const App = () => {
 
 	return (
 		<div className="site-wrapper">
+			<StartModal />
 			<Map data={data} />
 		</div>
 	);
