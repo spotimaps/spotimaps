@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.20393124.chunk.css",
-    "main.js": "/static/js/main.c5dd310c.chunk.js",
-    "main.js.map": "/static/js/main.c5dd310c.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.a2bdde9a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.a2bdde9a.js.map",
-    "static/css/2.36f280e5.chunk.css": "/static/css/2.36f280e5.chunk.css",
-    "static/js/2.effcf227.chunk.js": "/static/js/2.effcf227.chunk.js",
-    "static/js/2.effcf227.chunk.js.map": "/static/js/2.effcf227.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.f8a6e77868ed96d1e2f0edaccf642403.js": "/precache-manifest.f8a6e77868ed96d1e2f0edaccf642403.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.36f280e5.chunk.css.map": "/static/css/2.36f280e5.chunk.css.map",
-    "static/css/main.20393124.chunk.css.map": "/static/css/main.20393124.chunk.css.map",
-    "static/js/2.effcf227.chunk.js.LICENSE": "/static/js/2.effcf227.chunk.js.LICENSE"
+    "main.css": "/spotimaps/static/css/main.20393124.chunk.css",
+    "main.js": "/spotimaps/static/js/main.1fa65074.chunk.js",
+    "main.js.map": "/spotimaps/static/js/main.1fa65074.chunk.js.map",
+    "runtime-main.js": "/spotimaps/static/js/runtime-main.e722f594.js",
+    "runtime-main.js.map": "/spotimaps/static/js/runtime-main.e722f594.js.map",
+    "static/css/2.36f280e5.chunk.css": "/spotimaps/static/css/2.36f280e5.chunk.css",
+    "static/js/2.d064636a.chunk.js": "/spotimaps/static/js/2.d064636a.chunk.js",
+    "static/js/2.d064636a.chunk.js.map": "/spotimaps/static/js/2.d064636a.chunk.js.map",
+    "index.html": "/spotimaps/index.html",
+    "precache-manifest.3cc403a23186eb42c3075432fc48d746.js": "/spotimaps/precache-manifest.3cc403a23186eb42c3075432fc48d746.js",
+    "service-worker.js": "/spotimaps/service-worker.js",
+    "static/css/2.36f280e5.chunk.css.map": "/spotimaps/static/css/2.36f280e5.chunk.css.map",
+    "static/css/main.20393124.chunk.css.map": "/spotimaps/static/css/main.20393124.chunk.css.map",
+    "static/js/2.d064636a.chunk.js.LICENSE": "/spotimaps/static/js/2.d064636a.chunk.js.LICENSE"
   },
   "entrypoints": [
-    "static/js/runtime-main.a2bdde9a.js",
+    "static/js/runtime-main.e722f594.js",
     "static/css/2.36f280e5.chunk.css",
-    "static/js/2.effcf227.chunk.js",
+    "static/js/2.d064636a.chunk.js",
     "static/css/main.20393124.chunk.css",
-    "static/js/main.c5dd310c.chunk.js"
+    "static/js/main.1fa65074.chunk.js"
   ]
 }
