@@ -1,6 +1,3 @@
 .start-modal--wrapper{
-    height: 50vh;
-    max-height: 400px;
-    margin: 0 auto;
-    width: 600px;
+    background-color: green;
 }
