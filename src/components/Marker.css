@@ -1,3 +1,29 @@
 .marker-wrapper{
-    font-size: 18px;
+    background-color:#1DB954;
+}
+#artist{
+    font-size:9pt;
+    text-align:left;
+    color:black;
+}
+#song{
+    font-size:18pt;
+    text-align:left;
+    color: white;
+}
+#speaker{
+    margin-left:5px;
+}
+.leaflet-popup-content-wrapper{
+    background-color:#1DB954;
+}
+.leaflet-popup-tip{
+    background-color:#1DB954;
+}
+.leaflet-popup-close-button{
+    color:black;
+}
+.leaflet-interactive{
+    color:#1DB954;
+    stroke:#1DB954;
 }
