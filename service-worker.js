@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/spotimaps/precache-manifest.3f73ad3a18b50abea19f6c24aaeb37d0.js"
+  "/spotimaps/precache-manifest.71a908d489814940392e6b1b709dfa2b.js"
 );
 
 self.addEventListener('message', (event) => {
