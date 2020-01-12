@@ -20,11 +20,11 @@ const firebaseSampleData = [
         lng: -119.85
     },
 ]
-
+let db;
 
 const getData = ( callback ) => {
-    let db = firebase.firestore();
     // where to implement firebase call 
+    db = firebase.firestore();
     let query = db.collection('songs');
     let newData = [];
     query.onSnapshot(snapshot => {
@@ -34,8 +34,14 @@ const getData = ( callback ) => {
         })
     })
 }
-const addData = () => {
-    return firebaseSampleData;
+const addData = (data) => {
+    db.collection("songs").add(data)
+    .then(function() {
+        console.log("Document successfully written!");
+    })
+    .catch(function(error) {
+        console.error("Error writing document: ", error);
+    });
 }
 
 export default {
