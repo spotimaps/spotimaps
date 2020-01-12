@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "149254a2109df8c39ad8da71a03a01b3",
+    "revision": "d43d19f5c5ee18d27cfc1d0c778531b9",
     "url": "/spotimaps/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/spotimaps/static/css/2.36f280e5.chunk.css"
   },
   {
-    "revision": "32bb24f563642c191b64",
+    "revision": "68a5736591f5d6ba1dc8",
     "url": "/spotimaps/static/css/main.ccf29cc7.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/spotimaps/static/js/2.481017db.chunk.js.LICENSE"
   },
   {
-    "revision": "32bb24f563642c191b64",
-    "url": "/spotimaps/static/js/main.88426344.chunk.js"
+    "revision": "68a5736591f5d6ba1dc8",
+    "url": "/spotimaps/static/js/main.d53a2ea1.chunk.js"
   },
   {
     "revision": "00cd15b45421346eca8f",
