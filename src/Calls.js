@@ -1,25 +1,8 @@
 import * as firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/firestore';
+import Swal from 'sweetalert2';
 
-const firebaseSampleData = [
-    {
-        info: {
-            name: 'Demons',
-            artist: 'Imagine Dragons'
-        },
-        lat: 34.42,
-        lng: -119.8
-    },
-    {
-        info: {
-            name: 'Flemonds',
-            artist: 'Lemon Rabbits'
-        },
-        lat: 34.43,
-        lng: -119.85
-    },
-]
 let db;
 
 const getData = ( callback ) => {
@@ -35,13 +18,48 @@ const getData = ( callback ) => {
     })
 }
 const addData = (data) => {
-    db.collection("songs").add(data)
-    .then(function() {
-        console.log("Document successfully written!");
-    })
-    .catch(function(error) {
-        console.error("Error writing document: ", error);
-    });
+    // fetch(`https://d223092c.ngrok.io/sentiment/${data.info.name}/${data.name.artist}`).then(res => {
+    //     return res.text();
+    // }).then(res => {
+        // data.info.color = res;
+        db.collection("songs").add(data)
+        .then(function() {
+            console.log("Song Added!", data); // add swal here
+            Swal.fire({
+                icon: 'success',
+                title: 'Song Added!',
+                text: 'Thanks for joining Spotimaps. You have added ' + 
+                `${data.info.name} by ${data.info.artist}`,
+            });
+        })
+        .catch(function(error) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'Something seems to have gone wrong :(',
+            });
+            console.error("Error writing document: ", error);
+        });
+    // }).catch(err => {
+    //     db.collection("songs").add(data)
+    //     .then(function() {
+    //         console.log("Song Added!", data); // add swal here
+    //         Swal.fire({
+    //             icon: 'success',
+    //             title: 'Song Added!',
+    //             text: 'Thanks for joining Spotimaps.',
+    //         });
+    //     })
+    //     .catch(function(error) {
+    //         Swal.fire({
+    //             icon: 'error',
+    //             title: 'Error',
+    //             text: 'Something seems to have gone wrong :(',
+    //         });
+    //         console.error("Error writing document: ", error);
+    //     });
+    // });
+    
 }
 
 export default {

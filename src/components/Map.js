@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Map as LMap, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import InformationPopup from './InformationPopup';

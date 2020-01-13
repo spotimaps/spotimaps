@@ -24,6 +24,10 @@
     color:black;
 }
 .leaflet-interactive{
-    color:#1DB954;
-    stroke:#1DB954;
+    /* color:#1DB954;
+    stroke:#1DB954; */
+}
+.image{
+    margin-top: 10px;
+    width: 100%;
 }

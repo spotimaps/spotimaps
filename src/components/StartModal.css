@@ -1,4 +1,6 @@
 .start-modal--wrapper{
     background-color: #FFFFFF;
     color: #000000;
+    width: calc( 100% - 80px );
+    margin: 0 auto;
 }

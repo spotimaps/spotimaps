@@ -9,16 +9,20 @@ import './App.css';
 
 
 const App = () => {
-	console.log("Version 4.1.1");
+	console.log("Version 4.1.5");
 	const [data, setData] = useState([]);
 	const [center, setCenter] = useState([ 34.42, -119.99 ]);
-	const [start, setStart] = useState(true);
 
 	const getToken = (code, pos) => {
+		console.log(code);
+		if(code === null){
+			return;
+		}
 		fetch('https://spotimaps.appspot.com/token?code=' + code)
 		.then(res => {
 			return res.json();
 		}).then(res => {
+			console.log(res.access_token);
 			let myHeaders = new Headers();
 			myHeaders.append("Authorization", "Bearer " + res.access_token);
 			fetch('https://api.spotify.com/v1/me/player/currently-playing', {
@@ -28,6 +32,7 @@ const App = () => {
 			}).then(resp => {
 				return resp.json();
 			}).then(resp => {
+				console.log(resp);
 				Calls.add({
 					info: {
 						name: resp.item.name,

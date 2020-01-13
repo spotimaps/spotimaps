@@ -1,21 +1,23 @@
 import React from 'react';
-import { CircleMarker, Popup } from 'react-leaflet';
+import { CircleMarker } from 'react-leaflet';
 import Marker from './Marker';
 
 const InformationPopup = ({info, lat, lng}) => {
+    const getColor = () => {
+        // console.log(info.color === undefined ? '#1DB954' : info.color);
+        return info.color === undefined ? '#1DB954' : info.color;
+    }
     return (
         <CircleMarker
             center={[lat, lng]}
-            radius={4}
+            radius={5}
             fill={true}
-            color={'#00ffff'}
-            fillColor={'#00ffff'}
-            fillOpacity={'0.75'}
+            color={getColor()}
+            fillColor={getColor()}
+            fillOpacity={'1'}
             // onClick={() => { setCenter.bind(null, popuploc) }}
         >
-            <Popup>
-                <Marker info={info}/>
-            </Popup>
+            <Marker info={info}/>
         </CircleMarker>
     );
 }
